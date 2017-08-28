@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_welcome" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_hight"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/coupon_color_content"
+        android:textSize="@dimen/dp_28"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_below="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/dp_28"
+        android:textColor="@color/orangered"
+        android:text="@string/welcome_text"
+        android:textStyle="italic"
+        />
+
+    <com.jushiyun.cxf.lightread.widget.CountdownTextView
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_2"
+      />
+
+
+</RelativeLayout>
